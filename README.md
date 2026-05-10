@@ -1,55 +1,57 @@
-# Mintlify Starter Kit
+# OOMUS eHealth CampaignID Documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+Public documentation for OOMUS eHealth CampaignID, a SaaS platform for generating, distributing and verifying secure digital cards for public health campaigns.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+This repository is intended for partners, frontend integrators, technical teams and pilot clients. It contains public product and technical documentation only.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## Start Here
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- [Product Requirements](./getting-started/product-requirements.md)
+- [Technical Architecture](./architecture/technical-architecture.md)
+- [API Reference](./reference/api-reference.md)
+- [Generation Workflow](./guides/generation-workflow.md)
+- [Deployment Runbook](./deployment/deployment-runbook.md)
 
-## AI-assisted writing
+## Documentation Map
 
-Set up your AI coding tool to work with Mintlify:
+| Section | Description |
+| --- | --- |
+| [Getting Started](./getting-started/) | Product scope and platform overview |
+| [Guides](./guides/) | Integration, generation and testing guides |
+| [Integrations](./integrations/) | DHIS2, Google Wallet, WhatsApp and SMS |
+| [Reference](./reference/) | API and database reference |
+| [Architecture](./architecture/) | Technical architecture |
+| [Security](./security/) | Cryptography, offline verification, data protection and responsible AI |
+| [Deployment](./deployment/) | Deployment and operations runbooks |
 
-```bash
-npx skills add https://mintlify.com/docs
+## Public Scope
+
+Included:
+
+- Product and technical overview.
+- Public API and integration documentation.
+- Security model summaries.
+- Deployment and monitoring guidance.
+- Testing strategy.
+
+Excluded:
+
+- Business plan and internal financial documents.
+- Legal contracts, full internal compliance files and SLA terms.
+- Internal security policy details and risk register.
+- Secrets, credentials, environment files and production exports.
+- Client data, real DHIS2 exports and personally identifiable data.
+
+## Repository Name
+
+Recommended repository name:
+
+```text
+oomus-ehealth-campaignid-docs
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+## Publication
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+This documentation is written in Markdown and can be published directly on GitHub. It is also ready for a later migration to GitHub Pages, Docusaurus or Mintlify.
 
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+Before publishing, follow the [Publishing Checklist](./PUBLISHING.md). Contributions and security reporting are covered by [CONTRIBUTING.md](./CONTRIBUTING.md), [SECURITY.md](./SECURITY.md) and [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
